@@ -14,6 +14,6 @@ password.send_keys("SuperSecretPassword!")
 login_button = driver.find_element(By.CSS_SELECTOR, "button[type='submit']")
 login_button.click()
 time.sleep(2)
-message = driver.find_element(By.ID, "flash").text
+message      = driver.find_element(By.ID, "flash").text
 print("登入結果：", message)
 driver.quit()
